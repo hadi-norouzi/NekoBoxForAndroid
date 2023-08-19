@@ -32,7 +32,7 @@ class MainActivityTv : ThemedActivity() {
 
         }
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_holder, fragment)
+            .replace(R.id.config_fragment, fragment)
             .commitAllowingStateLoss()
     }
 
