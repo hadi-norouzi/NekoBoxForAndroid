@@ -89,6 +89,7 @@ class MainActivity : ThemedActivity(),
         binding.stats.setOnClickListener { if (DataStore.serviceState.connected) binding.stats.testConnection() }
 
         setContentView(binding.root)
+
         ViewCompat.setOnApplyWindowInsetsListener(binding.coordinator, ListHolderListener)
         changeState(BaseService.State.Idle)
         connection.connect(this, this)
